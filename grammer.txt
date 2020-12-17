@@ -1,0 +1,5 @@
+expr   : term ((PLUS|MINUS) term)*
+term   : Factor ((MUL|DIV) factor)*
+factor : INT|FLOAT
+       : (PLUS|MINUS) factor
+       : LP
